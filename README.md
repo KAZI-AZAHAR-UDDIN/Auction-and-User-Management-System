@@ -1,14 +1,14 @@
-FullstackInternTask - Auction and User Management System
+## Auction and User Management System
 
 
-Project Overview
+## Project Overview
 This project consists of two microservices:
 
-User Management and Authentication
+## User Management and Authentication
 Auction Management and Bidding
 The project is built with Django and is designed to handle user authentication, CRUD operations for users and auctions, and bidding functionality.
 
-Project Structure
+## Project Structure
 auction_management/: Handles auction-related operations including CRUD and bidding.
 
 user_management/: Manages user authentication, registration, and user data.
@@ -19,7 +19,7 @@ manage.py: Django's command-line utility for administrative tasks.
 
 requirements.txt: Lists all the dependencies for the project.
 
-Folder Structure
+## Folder Structure
 
 AuctionSystem/
 ├── auctionenv/
@@ -63,7 +63,7 @@ AuctionSystem/
 └── README.md
 
 
-Dependencies
+## Dependencies
 Dependencies are listed in requirements.txt. To install the necessary packages, use:
 
 
@@ -72,11 +72,12 @@ pip install -r requirements.txt
 Setup Instructions
 Follow these steps to set up the project:
 
-Clone the Repository:
+## Clone the Repository:
 
 
-git clone https://github.com/kazi-azahar-uddin/wasserstoff/FullstackInternTask.git
-cd FullstackInternTask
+git clone [https://github.com/KAZI-AZAHAR-UDDIN/Auction-and-User-Management-System]
+cd Auction-and-User-Management-System
+
 Set Up Virtual Environment:
 
 Create and activate a virtual environment:
@@ -101,40 +102,43 @@ Start the development server:
 python manage.py runserver
 
 
-API Endpoints
-User Management
-User Registration:
+## API Endpoints-User Management
+
+## User Registration:
 
 POST /api/user/register/
 Request body: { "username": "string", "email": "string", "password": "string" }
 
-User Login:
+## User Login:
 
 POST /api/user/login/
 Request body: { "username": "string", "password": "string" }
 Response: { "token": "string" }
 
-Auction Management
-Create Auction:
+## Auction Management
+
+## Create Auction:
 
 POST /api/auction/auctions/
 Request body: { "item_name": "string", "start_time": "datetime", "end_time": "datetime", "start_price": "float" }
 Headers: { "Authorization": "Token <admin_token>" }
-View All Auctions:
+
+## View All Auctions:
 
 GET /api/auction/auctions/
-Update Auction:
+
+## Update Auction:
 
 PUT /api/auction/auctions/{id}/
 Request body: { "item_name": "string", "start_time": "datetime", "end_time": "datetime", "start_price": "float", "highest_bid": "float", "winner": "user_id" }
 Headers: { "Authorization": "Token <admin_token>" }
 
-Delete Auction:
+## Delete Auction:
 
 DELETE /api/auction/auctions/{id}/
 Headers: { "Authorization": "Token <admin_token>" }
 
-Bidding
+## Bidding
 Place a Bid:
 POST /api/auction/auctions/{id}/bid/
 Request body: { "amount": "float" }
@@ -142,9 +146,7 @@ Headers: { "Authorization": "Token <user_token>" }
 
 
 Postman Collection
-A Postman collection with all API endpoints is provided. You can import it to test the API endpoints.
-
-Download Postman Collection
+A Postman collection with all API endpoints is provided.
 
 License
 This project is licensed under the MIT License.
