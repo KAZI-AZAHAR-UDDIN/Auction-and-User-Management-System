@@ -19,49 +19,6 @@ manage.py: Django's command-line utility for administrative tasks.
 
 requirements.txt: Lists all the dependencies for the project.
 
-## Folder Structure
-
-AuctionSystem/
-├── auctionenv/
-├── AuctionSystem/
-│   ├── auction_management/
-│   │   ├── __pycache__/
-│   │   ├── migrations/
-│   │   ├── __init__.py
-│   │   ├── admin.py
-│   │   ├── apps.py
-│   │   ├── models.py
-│   │   ├── serializers.py
-│   │   ├── tests.py
-│   │   ├── urls.py
-│   │   └── views.py
-│   ├── user_management/
-│   │   ├── __pycache__/
-│   │   ├── migrations/
-│   │   ├── __init__.py
-│   │   ├── admin.py
-│   │   ├── apps.py
-│   │   ├── models.py
-│   │   ├── serializers.py
-│   │   ├── tests.py
-│   │   ├── urls.py
-│   │   └── views.py
-│   ├── __pycache__/
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── generate_secret_key.py
-│   ├── manage.py
-│   ├── middleware.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── views.py
-│   └── wsgi.py
-├── .env
-├── .gitignore
-├── db.sqlite3
-├── requirements.txt
-└── README.md
-
 
 ## Dependencies
 Dependencies are listed in requirements.txt. To install the necessary packages, use:
